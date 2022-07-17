@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gray;
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+img.watch {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 256px;
+    image-rendering: pixelated;
+}
+.time {
+    width: 158px;
+    height: 40px;
+    color: #fff7fa;
+    font-size: 20px;
+    /* For PT Sans */
+    letter-spacing: 0.1em;
+    /* For PT Sans */
+    font-weight: 400;
+    text-align: left;
+    line-height: 1rem;
+    padding-left: 5px;
+    position: absolute;
+    margin: auto;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    z-index: 2;
+    opacity: 0;
+}
+.day,
+.month,
+.date {
+    font-size: 12px;
+}
+.opScreen {
+    background: black;
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    margin: auto;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.opScreenLeft {
+    left: -80px;
+}
+.opScreenLeft:hover {
+    cursor: pointer;
+}
+.opScreenRight:hover {
+    cursor: pointer;
+}
+.opScreenRight {
+    right: -80px;
+}
+.opScreenLeft-effect {
+    width: 0;
+    left: -160px;
+}
+.opScreenRight-effect {
+    width: 0;
+    right: -161px;
+}
+.button {
+    width: 16px;
+    height: 24px;
+    border-radius: 35%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+}
+.button:hover {
+    cursor: pointer;
+}
+.buttonTop {
+    top: -50px;
+    right: -195px;
+}
+.buttonBottom {
+    top: 50px;
+    right: -195px;
+}
+.background {
+    width: 160px;
+    height: 128px;
+    position: absolute;
+    padding-top: 8px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    opacity: 0;
+}
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.watch-buttons {
+    position: absolute;
+    margin: auto;
+    top: 180px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: inherit;
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    transition: top 1s;
+    -webkit-transition: top 1s;
+}
+.watch-buttons a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.watch-buttons a:hover {
+    opacity: 1;
+}
+.info-bar {
+    position: absolute;
+    margin: auto;
+    top: -100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: inherit;
+    height: 28px;
+    text-align: right;
+    padding: 4px 10px;
+}
+.info-bar span {
+    color: white;
+    font-size: 10px;
+}
+.fadeIn-background {
+    opacity: 0.8;
+}
+.fadeIn-time {
+    opacity: 1;
+}
+.slideIn-buttons {
+    top: 90px;
+}
+
+.controls {
+    border: 2px solid white;
+    width: 300px;
+    /* margin: auto; */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}

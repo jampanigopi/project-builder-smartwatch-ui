@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smart watch UI</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 style="color: white">Smart Watch UI</h1>
+        <h2 style="color:white">clik on watch to open watch</h2>
+        
+    
+        <body onload="updateTime();">
+            <div onclick="smartWatch.openWatch();" class="button buttonTop"></div>
+            <div onclick="smartWatch.changeBackground();" class="button buttonBottom"></div>
+            <div class="opScreen opScreenLeft" onclick="smartWatch.openWatch();"></div>
+            <div class="opScreen opScreenRight" onclick="smartWatch.openWatch();"></div>
+        
+            <div class="background">
+                
+                <div class="info-bar">
+                    <span><i class="fa fa-wifi" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-signal" aria-hidden="true"></i></span>
+                    <span>99%<i class="fa fa-battery-full" aria-hidden="true"></i></span>
+                </div>
+                <div class="watch-buttons">
+                    <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-chrome" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="time">
+                <span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span><br />
+                <span class="day"></span>,<span class="month"></span><span class="date"></span>
+            </div>
+        </body>
+</html>
+     <script src="app.js"></script>
